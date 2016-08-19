@@ -6,8 +6,8 @@ from src import *
 from templates.text import TextTemplate
 
 
-def search(input, sender):
-    data = sys.modules['modules.src.' + input].process(input, sender)
+def search(input, data, sender):
+    data = sys.modules['modules.src.' + input].process(input, data, sender)
     if data['success']:
         return data['output']
     else:
