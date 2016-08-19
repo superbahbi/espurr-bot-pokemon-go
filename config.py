@@ -1,0 +1,4 @@
+
+# Facebook (+ Wit)
+ACCESS_TOKEN = '<<ACCESS_TOKEN>>'
+VERIFY_TOKEN = '<<VERIFY_TOKEN>>'
