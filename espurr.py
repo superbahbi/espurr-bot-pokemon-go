@@ -15,7 +15,7 @@ def about():
 
 @app.route('/search/')
 def search():
-    return json.dumps(modules.search(request.args.get('q'), "null"))
+    return json.dumps(modules.search(request.args.get('q'), "null", "null"))
 
 @app.route('/webhook/', methods=['GET', 'POST'])
 def webhook():
