@@ -3,7 +3,8 @@ from pogoiv.iv_calculator import IvCalculator
 
 def process(input, data ,sender):
     calc = IvCalculator()
-    res = calc.get_ivs("Chansey", 285, 271, 1900, powered=False)
+    pogodata = data.split(' ')
+    res = calc.get_ivs(pogodata[0], pogodata[1], pogodata[2], pogodata[3], pogodata[4])
     output = {
         'input': input,
         'output': TextTemplate(str(res)).get_message(),
