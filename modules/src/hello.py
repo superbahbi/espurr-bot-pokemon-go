@@ -2,7 +2,7 @@ import random
 import os
 from templates.text import TextTemplate
 
-def process(input, entities, sender):
+def process(input, sender):
     
     greetings = [
         'Welcome home, %s' % sender,
