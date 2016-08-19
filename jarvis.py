@@ -35,7 +35,7 @@ def webhook():
                         'id': sender
                     },
                     #'message': modules.search("help", name[0])
-                    'message': modules.search("help")
+                    'message': modules.search("help", "null")
                 }
                 
                 r = requests.post('https://graph.facebook.com/v2.6/me/messages', params={'access_token': ACCESS_TOKEN}, json=payload)
