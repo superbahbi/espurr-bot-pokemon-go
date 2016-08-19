@@ -1,12 +1,10 @@
 from templates.text import TextTemplate
 
 
-def process(input, entities, sender):
+def process(input, sender):
     help = '''Hi %s! I'm Espurr, your personal assistant.\nTell me things like the following:\n
   - define a superhero\n  - iron man 2 movie plot\n  - tell me a joke\n  - wiki html\n  - anything you want book\n  - random quote\n  - usd to eur rate\n
 I'm always learning, so do come back and say hi from time to time!\nHave a nice day.''' % (sender)
-def process(input, entities=None):
-    help = 'Hi there! I\'m Jarvis, your personal assistant.'
     help += '\nTell me things like:'
     help += '\n  - define comfort'
     help += '\n  - iron man 2 movie plot'
