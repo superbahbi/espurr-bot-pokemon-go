@@ -15,10 +15,6 @@ app = Flask(__name__)
 def about():
     return 'Espurr!'
 
-@app.route('/process/')
-def process():
-    return json.dumps(modules.process_query(request.args.get('q')))
-
 @app.route('/search/')
 def search():
     return json.dumps(modules.search(request.args.get('q'), "null"))
