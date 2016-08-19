@@ -5,10 +5,8 @@ import os
 import requests
 import modules
 import facebook
-
 ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN', config.ACCESS_TOKEN)
 VERIFY_TOKEN = os.environ.get('VERIFY_TOKEN', config.VERIFY_TOKEN)
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -50,4 +48,3 @@ def webhook():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=True)
-
