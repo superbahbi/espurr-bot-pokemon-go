@@ -6,7 +6,7 @@ def process(input, data ,sender):
     res = calc.get_ivs("Chansey", 285, 271, 1900, powered=False)
     output = {
         'input': input,
-        'output': TextTemplate(res).get_message(),
+        'output': TextTemplate(str(res)).get_message(),
         'success': True
     }
     return output
