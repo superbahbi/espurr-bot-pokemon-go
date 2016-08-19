@@ -1,6 +1,6 @@
 from templates.text import TextTemplate
 
-<<<<<<< HEAD
+
 def process(input, entities, sender):
     help = '''Hi %s! I'm Espurr, your personal assistant.\nTell me things like the following:\n
   - define a superhero\n  - iron man 2 movie plot\n  - tell me a joke\n  - wiki html\n  - anything you want book\n  - random quote\n  - usd to eur rate\n
@@ -21,7 +21,6 @@ def process(input, entities=None):
     help += '\n  - shorten google.com'
     help += '\n  - weather in london'
     help += '\n  - videos of sia'
->>>>>>> swapagarwal/master
     output = {
         'input': input,
         'output': TextTemplate(help).get_message(),

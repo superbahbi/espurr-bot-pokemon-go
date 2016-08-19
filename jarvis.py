@@ -40,6 +40,7 @@ def webhook():
                     'recipient': {
                         'id': sender
                     },
+                    #'message': modules.search("help", name[0])
                     'message': modules.search("help", name[0])
                 }
                 
